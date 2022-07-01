@@ -1,0 +1,14 @@
+# IDE
+__pycache__/
+
+.idea/
+
+# Environments
+.env
+env/
+
+# Database
+db.sqbpro
+
+# Media
+image/
