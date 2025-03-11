@@ -16,3 +16,4 @@ typing-extensions==3.10.0.2
 yarl
 Pillow==8.1.0
 pilmoji==2.0.1
+emoji==1.7.0
