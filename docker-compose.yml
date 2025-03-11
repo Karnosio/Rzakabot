@@ -1,0 +1,18 @@
+services:
+  bot:
+    build:
+      context: .
+    container_name: rzakabot
+    working_dir: "/usr/src/app/bot"
+    command: python3 -m bot
+    volumes:
+      - .:/usr/src/app/bot
+    env_file:
+      - ".env"
+    restart: always
+    stop_signal: SIGINT
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "200k"
+        max-file: "5"
